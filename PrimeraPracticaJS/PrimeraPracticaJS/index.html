@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Primera Practica JS</title>
+    <script>
+        //Aqui va el codigo Java Script
+        console.log("hola mudo desdde JS!");
+        var a = 50
+        var b = 30
+        var res = a * b;
+        console.log("El resultado es: " + res);
+
+
+        var aSum = 15
+        var bSum = 30
+        var resSum = aSum + bSum;
+        console.log("Resultado de la suma es: " + resSum);
+
+        //una funcion es una formula que se puede volver a usar en todo el codigo, se le asigna su formula de manera libre
+        function calAreaTriang(base, altura) {
+            var area = (base * altura) / 2;
+            return area
+        }
+
+        //esta funcion se esignara parqa que funcione el boton de calcuar area
+        function ejecutarCalArea() {
+            var base = campoBaseT.value;
+            var altura = campoAlturaT.value;
+            var resultado = (base * altura) / 2;
+            alert(resultado);
+        }
+
+
+        var areaTriangCh = calAreaTriang(1.8, 0.9);
+        console.log("El area del triangulo chico es: " + areaTriangCh)
+        //cosole.log al parecer es para que aparezca el texto o coso en la consola
+        var areaTriangMed = calAreaTriang(50, 40);
+        console.log("El area del triangulo mediano es: " + areaTriangMed)
+
+        var areaTriangGr = calAreaTriang(777, 240);
+        console.log("El area del triangulo grande es: " + areaTriangGr)
+
+
+    </script>
+
+</head>
+<body>
+    <h1>Primeras Prácticas</h1>
+    <p>En esta práctica, vamos a ver como funciona JS (java script) en el navegador.</p>
+
+    <h2>Area del triangulo</h2>
+    <p>Introduce las dimensiones del triangulo y presiona el boton para calcular su area</p>
+    Base: <input type="number" id="campoBaseT" />
+    Altura <input type="number" id="campoAlturaT" />
+    <button onclick="ejecutarCalArea()">Calcular area</button>
+                  
+</body>
+</html>
