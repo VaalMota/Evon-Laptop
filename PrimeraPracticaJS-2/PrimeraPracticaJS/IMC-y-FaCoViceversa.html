@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calcular IMC y Conversion de Grados</title>
+    <script>
+        //Ejercicio para calcular IMC
+        function ejecCalIMC() {
+            var altura = campAltura.value;
+            var peso = campPeso.value;
+            var res = calcularIMC(altura, peso);
+            alert(res);
+        }
+
+
+        function calcularIMC(peso, altura) {
+            var IMC = peso / ((altura) * (altura));
+            return IMC
+        }
+
+
+ 
+
+        //Ejercicio para cambiar Celcius a Farenheit
+        function convertirC(celcius) {
+            var far = (1.8 * celcius) + 32;
+            return far
+
+        }
+
+        function ejecGrados() {
+            var celcius = campoCel.value;
+            var res = convertirC(celcius)
+            alert(res)
+        }
+    </script>
+</head>
+<body>
+    <h2>Indice de Masa Corporal (IMC)</h2>
+    <p> Ingresa tu peso:</p>
+
+    Peso: <input type="number" id="campPeso" />
+    <p>Ingresa tu altura en metros:</p>
+
+    Altura: <input type="number" id="campAltura" />
+    <button onclick="ejecCalIMC()"> Calcula tu IMC</button>
+
+
+    <h2>Convercion de Grados Celcius a Farenheit</h2>
+    <p>Ingresa los Grados celcius a convertir</p>
+
+    Celcius: <input type="number" id="campoCel" />
+    <button onclick="ejecGrados">Convertir grados</button>
+</body>
+</html>
