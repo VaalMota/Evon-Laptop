@@ -8,30 +8,29 @@
         function ejecCalIMC() {
             var altura = campAltura.value;
             var peso = campPeso.value;
-            var res = calcularIMC(altura, peso);
+            var res = calcularIMC(peso, altura);
             alert(res);
         }
 
 
         function calcularIMC(peso, altura) {
-            var IMC = peso / ((altura) * (altura));
-            return IMC
+            var IMC = peso / ((altura) *(altura));
+            return IMC;
         }
 
 
  
 
         //Ejercicio para cambiar Celcius a Farenheit
-        function convertirC(celcius) {
-            var far = (1.8 * celcius) + 32;
-            return far
-
+        function convertirC(cel) {
+            var far = (1.8 * cel) + 32;
+            return far;
         }
 
         function ejecGrados() {
-            var celcius = campoCel.value;
-            var res = convertirC(celcius)
-            alert(res)
+            var cel = campoCel.value;
+            var res = convertirC();
+            alert(res);
         }
     </script>
 </head>
@@ -50,6 +49,6 @@
     <p>Ingresa los Grados celcius a convertir</p>
 
     Celcius: <input type="number" id="campoCel" />
-    <button onclick="ejecGrados">Convertir grados</button>
+    <button onclick="ejecGrados()">Convertir grados</button>
 </body>
 </html>
