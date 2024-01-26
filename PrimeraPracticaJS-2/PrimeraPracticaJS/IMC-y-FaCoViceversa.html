@@ -5,19 +5,19 @@
     <title>Calcular IMC y Conversion de Grados</title>
     <script>
         //Ejercicio para calcular IMC
-        function ejecCalIMC() {
-            var altura = campAltura.value;
-            var peso = campPeso.value;
-            var res = calcularIMC(peso, altura);
-            alert(res);
-        }
+  
 
-
-        function calcularIMC(peso, altura) {
+        function calcularIMC(peso, altura) { // aqui solo calculamos el imc
             var IMC = peso / ((altura) *(altura));
             return IMC;
         }
 
+        function ejecCalIMC() { //esto le da valores a peso y altura y evoca a la funcion para ahora si calcular el imc
+            var altura = campAltura.value;
+            var peso = campPeso.value;
+            var res = calcularIMC(peso, altura); //como se ve, res es la otra funcion para calcualr imc
+            alert(res);
+        }
 
  
 
@@ -29,7 +29,7 @@
 
         function ejecGrados() {
             var cel = campoCel.value;
-            var res = convertirC();
+            var res = convertirC(cel); // por alguna razon debemos poner a cel entre parentesis a fuerza aqui
             alert(res);
         }
     </script>
@@ -42,7 +42,7 @@
     <p>Ingresa tu altura en metros:</p>
 
     Altura: <input type="number" id="campAltura" />
-    <button onclick="ejecCalIMC()"> Calcula tu IMC</button>
+    <button onclick="ejecCalIMC()"> Calcula tu IMC</button>  
 
 
     <h2>Convercion de Grados Celcius a Farenheit</h2>
