@@ -10,6 +10,10 @@
             console.log("tiene " + persona.edad + " años y mide " + persona.altura);
         }
 
+        function describirCosas(cosa) {
+            console.log(cosa.nombre + " Tiene los siguientes datos: " + cosa.dato1 + " " + cosa.dato2 + " " + cosa.dato3);
+        }
+
         //declaro una var con estructura
         var pepito = {
             nombre: "Jose Juan",
@@ -26,32 +30,38 @@
         }
 
         var cel1 = {
-            marca: "Infinix"
-            origen: "China"
-            color: "Negro"
+            datou: "Infinix",
+            datod: "China",
+            datot: "Negro",
         }
 
 
         var cel2 = {
-            marca: "ZTE"
-            origen: "EU"
-            color: "Azul"
+            datou: "ZTE",
+            datod: "EU",
+            datot: "Azul",
         }
         var peli1 = {
-            nombre= "Nimona"
-            añoEstreno= "2023"
-            tipo= "Animacion"
+            datou= "Nimona",
+            datod= "2023",
+            datot= "Animacion",
         }
+
         var peli2 = {
-            nombre= "El niño y la garza"
-            añoEstreno= "2024"
-            tipo= "Animacion"
+            datou= "El niño y la garza",
+            datod= "2024",
+            datot= "Animacion",
         }
         var libre
 
         //invoco a la funcion pero ahora le envio el nombre de la var con estructura
         describirPersona(pepito);
-        describirPersona(clau)
+        describirPersona(clau);
+        describirCosas(cel1);
+        describirCosas(cel2);
+        describirCosas(peli1);
+        describirCosas(peli2);
+
 
     </script>
 </head>
