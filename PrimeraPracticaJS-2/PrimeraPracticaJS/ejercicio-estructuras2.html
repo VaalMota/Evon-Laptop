@@ -11,7 +11,7 @@
         }
 
         function describirCosas(cosa) {
-            console.log(cosa.nombre + " Tiene los siguientes datos: " + cosa.dato1 + " " + cosa.dato2 + " " + cosa.dato3);
+            console.log(cosa.nombre + " Tiene los siguientes datos: " + cosa.datou + " " + cosa.datod + " " + cosa.datot);
         }
 
         //declaro una var con estructura
@@ -30,29 +30,47 @@
         }
 
         var cel1 = {
-            datou: "Infinix",
+            nombre: "El celular uno",
+            datou: "Creado en 2023",
             datod: "China",
-            datot: "Negro",
+            datot: "Marca Infinix",
         }
 
 
         var cel2 = {
-            datou: "ZTE",
+            nombre: "El celular dos",
+            datou: "Creado en 2020",
             datod: "EU",
-            datot: "Azul",
+            datot: "ZTE",
         }
         var peli1 = {
-            datou= "Nimona",
-            datod= "2023",
-            datot= "Animacion",
+           nombre: "la pelicula uno",
+            datou: "Tiene de titulo Nimona",
+            datod: "2023",
+            datot: "Del tipo Animacion",
         }
 
         var peli2 = {
-            datou= "El niño y la garza",
-            datod= "2024",
-            datot= "Animacion",
+            nombre: "la pelicula dos",
+            datou: "Llamada El niño y la garza",
+            datod: "2024",
+            datot: "Del tipo Animacion",
         }
-        var libre
+        var libre1 = {
+            nombre: "el peluche uno",
+            datou: "Es un perro ",
+            datod: "de color amarillo",
+            datot: "se llama Jake",
+
+        }
+
+        var libre2 = {
+            nombre: "el peluche dos",
+            datou: "Es un koala ",
+            datod: "de color gris",
+            datot: "se llama Mathew",
+
+        }
 
         //invoco a la funcion pero ahora le envio el nombre de la var con estructura
         describirPersona(pepito);
@@ -61,7 +79,8 @@
         describirCosas(cel2);
         describirCosas(peli1);
         describirCosas(peli2);
-
+        describirCosas(libre1);
+        describirCosas(libre2);
 
     </script>
 </head>
