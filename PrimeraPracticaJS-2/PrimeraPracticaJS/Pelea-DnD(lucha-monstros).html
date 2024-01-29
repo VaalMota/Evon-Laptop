@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pelea DnD</title>
+    <script>
+
+        var chicEspadas = {
+            nombre: "La temible Chica con 2 espadas",
+            hp:200,
+            atk: 100,
+            def: 35,
+        }
+
+        //Aqui va JS
+        function mounstruoRojoAtaca() {
+            console.log("El monstruo Rojo Ataca");
+            chicEspadas.def = chicEspadas.def - 20;
+
+            if (chicEspadas.def < 0) {
+                chicEspadas.hp = chicEspadas.hp - 20;
+                console.log(chicEspadas.nombre + " ahora tiene 0 puntos de defensa y  " + chicEspadas.hp + " puntos de vida");
+            }
+            if (chicEspadas.hp < 0) {
+                chicEspadas.hp = chicEspadas.hp - 20;
+                console.log(chicEspadas.nombre + " ahora tiene 0 puntos de defensa y  " + chicEspadas.hp + " puntos de vida");
+            }
+            else {
+                console.log(chicEspadas.nombre + " ahora tiene " + chicEspadas.def + "y " + chicEspadas.hp + "puntos de vida");
+            }
+
+        function dragonAtaca() {
+            console.log("El Dragon Ojiazul Ataca");
+            chicEspadas.def = chicEspadas.def - 30;
+            if (chicEspadas.def < 0) {
+                chicEspadas.hp = chicEspadas.hp - 20;
+                console.log(chicEspadas.nombre + " ahora tiene 0 puntos de defensa y  " + chicEspadas.hp + " puntos de vida");
+            }
+            else {
+                console.log(chicEspadas.nombre + " ahora tiene " + chicEspadas.def + "y " + chicEspadas.hp + "puntos de vida");
+            }
+            
+        }
+    </script>
+    <style>
+        /* aqui va CSS*/
+        
+        #calabozo {
+            width: 900px;
+            height: 600px;
+            background-image: URL("img/personajes/fondo.jpg");
+            background-size: cover;
+        }
+
+        /* podemos usar esta forma*/
+        .personaje {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #monstroBola {
+            left: 300px;
+            top: 200px;
+        }
+
+        #dragonOjiazul {
+
+            left: 500px;
+            top: 200px;
+        }
+
+        /* o esta otra forma*/
+        #PersonaEspadas {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 400px;
+            top: 400px;
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="calabozo">
+        <img id="monstroBola" class="personaje" 
+             src="img/personajes/monstroRojo.png"
+             onclick="mounstruoRojoAtaca()"
+             />
+        <img id="dragonOjiazul" class="personaje" 
+             src="img/personajes/dragonAzul.png"
+             onclick="dragonAtaca()"
+             />
+        <img id="PersonaEspadas" src="img/personajes/chicaEspadas.png"/>
+    </div>
+</body>
+</html>

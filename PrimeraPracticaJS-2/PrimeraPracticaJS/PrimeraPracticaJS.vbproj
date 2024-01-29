@@ -95,6 +95,13 @@
     <Content Include="cuenta-banco2.html" />
     <Content Include="ejercicio-estructuras2.html" />
     <Content Include="IMC-y-FaCoViceversa.html" />
+    <Content Include="img\personajes\arania.png" />
+    <Content Include="img\personajes\chicaEspadas.png" />
+    <Content Include="img\personajes\chicaLanza.png" />
+    <Content Include="img\personajes\dragonAzul.png" />
+    <Content Include="img\personajes\fondo.jpg" />
+    <Content Include="img\personajes\monstroRojo.png" />
+    <Content Include="Pelea-DnD%28lucha-monstros%29.html" />
     <Content Include="practica1triangulos.html" />
     <Content Include="Web.config" />
   </ItemGroup>
