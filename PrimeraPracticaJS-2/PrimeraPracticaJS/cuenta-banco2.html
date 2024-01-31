@@ -9,53 +9,51 @@
             prop: "Raulina Castro",
             saldo: 1603,
             banco: "Banco de Mexicos",
-             nip: 111,
+            nip: 123,
          }
 
-
-        function validarNip() {
-            var nipI = campoNipIngresado.value;
-            return nipI === miCuenta.nip
-            }
-
         function retirarDinero() {
-            var monto = campoMonto.value;
-            if (validarNip()) {
+            
+            var nipp = campoNipIngresado.value;
+            if (miCuenta.nip === nipp) {
+                var monto = campoMonto.value;
                 if (monto > miCuenta.saldo) {
-                    //el saldo es induficiente
+                    //el saldo es insuficiente
                     panelResultado.innerHTML =
                         "No tienes saldo suficiente, jaja pobre.";
                 }
-                else {//el saldo es suficiente
+                else  {//el saldo es suficiente
                     miCuenta.saldo -= monto;
                     panelResultado.innerHTML =
                         "Retiraste $" + monto + ". Te queda $"
                         + miCuenta.saldo;
                 }
             }
-            else {
+            if ( miCuenta.nip != nipp)   {
                 panelResultado.innerHTML = "Nip incorrecto";
             }
         }
 
 
         function consulCuenta() {
-            if (validarNip()) {
+            var nipc = campoNipIngresado.value;
+            if (miCuenta.nipp === nipc) {
                 panelResultado.innerHTML =
                     miCuenta.prop + ", " + "tienes $" +
                     miCuenta.saldo + " en el " + miCuenta.banco;
             }
-            else {
+            if (miCuenta.nip!= nipc) {
                 panelResultado.innerHTML = "Nip incorrecto";
             }
         }
         function depositarDinero() {
-            if (validarNip()) {
+            var nipd = campoNipIngresado.value;
+            if (miCuenta.nip === nipd) {
                 var monto = campoMonto.value;
                 miCuenta.saldo += monto;
                 panelResultado.innerHTML = "Depositaste $" + monto + ". Ahora tienes $" + "pesos en el" + miCuenta.banco;
             }
-            else {
+            if (miCuenta.nip != nipd) {
                 panelResultado.innerHTML = "Nip incorrecto";
             }
            

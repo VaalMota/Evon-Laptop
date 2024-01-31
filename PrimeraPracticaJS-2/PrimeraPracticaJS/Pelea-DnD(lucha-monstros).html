@@ -8,38 +8,79 @@
         var chicEspadas = {
             nombre: "La temible Chica con 2 espadas",
             hp:200,
-            atk: 100,
+            atk: 150,
             def: 35,
+            exp:1000
+        }
+
+        var mike = {
+            nombre: "Mike Wozauski Endemoniado",
+            hp: 150,
+            atk: 50,
+            def: 90,
+            exp: 30
+        }
+
+        var dragonA = {
+            nombre: "Dragon Ojiazul Mamadisimo",
+            hp: 300,
+            atk: 90,
+            def: 90,
+            exp: 30
         }
 
         //Aqui va JS
         function mounstruoRojoAtaca() {
-            console.log("El monstruo Rojo Ataca");
-            chicEspadas.def = chicEspadas.def - 20;
+            console.log(mike.nombre + " Ataca");
+            chicEspadas.hp = chicEspadas.hp + chicEspadas.def - mike.atk;
+            
+            if (chicEspadas.hp > 0) {
+                console.log("El ataque Mike Wazaouski es de " + mike.atk + " y la defensa de " + chicEspadas.nombre+ " tiene valor de " + chicEspadas.def + " por lo tanto, " + chicEspadas.nombre + " ahora tiene " + chicEspadas.hp + " puntos de vida");
+            }
+            if (chicEspadas.hp <= 0) {
 
-            if (chicEspadas.def < 0) {
-                chicEspadas.hp = chicEspadas.hp - 20;
-                console.log(chicEspadas.nombre + " ahora tiene 0 puntos de defensa y  " + chicEspadas.hp + " puntos de vida");
+                alert("La vida de la caballera bajo a 0 y se murio por andar de mensa jaja. Los puntos de experiencia se reparten asi:             " + dragonA.nombre + "= +" + dragonA.exp + " Xp.      Y " + mike.nombre + "= +" + mike.exp +" Xp" )
+                    
             }
-            if (chicEspadas.hp < 0) {
-                chicEspadas.hp = chicEspadas.hp - 20;
-                console.log(chicEspadas.nombre + " ahora tiene 0 puntos de defensa y  " + chicEspadas.hp + " puntos de vida");
-            }
-            else {
-                console.log(chicEspadas.nombre + " ahora tiene " + chicEspadas.def + "y " + chicEspadas.hp + "puntos de vida");
-            }
+            contraAtaqueM()
+        }
 
         function dragonAtaca() {
-            console.log("El Dragon Ojiazul Ataca");
-            chicEspadas.def = chicEspadas.def - 30;
-            if (chicEspadas.def < 0) {
-                chicEspadas.hp = chicEspadas.hp - 20;
-                console.log(chicEspadas.nombre + " ahora tiene 0 puntos de defensa y  " + chicEspadas.hp + " puntos de vida");
+            console.log(dragonA.nombre + " Ataca");
+            chicEspadas.hp = chicEspadas.hp + chicEspadas.def - dragonA.atk;
+
+            if (chicEspadas.hp > 0) {
+                console.log("El ataque del dragon ojiazul es de " + dragonA.atk + " y la defensa de " + chicEspadas.nombre + " tiene valor de " + chicEspadas.def + " por lo tanto, " + chicEspadas.nombre + " ahora tiene " + chicEspadas.hp + " puntos de vida");
+                
             }
-            else {
-                console.log(chicEspadas.nombre + " ahora tiene " + chicEspadas.def + "y " + chicEspadas.hp + "puntos de vida");
+            if (chicEspadas.hp <= 0) {
+                alert("La vida de la caballera bajo a 0 y se murio por andar de mensa jaja")
             }
-            
+            contraAtaqueD()
+        }
+
+        function contraAtaqueM() {
+            mike.hp = mike.hp + mike.def - chicEspadas.atk;
+            console.log(chicEspadas.nombre + " contraataca");
+            if (mike.hp > 0)
+                console.log("El ataque de la caballera es de " + chicEspadas.atk + " y la defensa de " + mike.nombre + " tiene valor de " + mike.def + " por lo tanto, " + mike.nombre + " ahora tiene " + mike.hp + " puntos de vida")
+
+            if (mike.hp <= 0) {
+                console.log("Mike c murio qwq. Este ya no puede atacar")
+                mounstruoRojoAtaca= oninvalid
+            }
+        }
+
+        function contraAtaqueD() {
+            dragonA.hp = dragonA.hp + dragonA.def - chicEspadas.atk;
+            console.log(chicEspadas.nombre + " contraataca");
+            if (dragonA.hp > 0)
+                console.log("El ataque de la caballera es de " + chicEspadas.atk + " y la defensa de " + dragonA.nombre + " tiene valor de " + dragonA.def + " por lo tanto, " + dragonA.nombre + " ahora tiene " + dragonA.hp + " puntos de vida")
+
+            if (dragonA.hp <= 0) {
+                console.log("El super hiper mega fuerte Dragon de ojos azules super raro de encontrar escupefuegos lanzallamas ha caido en batalla.... Este ya no puede atacar")
+                dragonAtaca() = oninvalid
+            }
         }
     </script>
     <style>
