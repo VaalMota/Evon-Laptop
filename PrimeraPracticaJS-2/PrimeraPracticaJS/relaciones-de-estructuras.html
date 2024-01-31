@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Relaciones entre estructuras</title>
+    <script>
+        var draco = {
+            nombre: "Draco",
+            apellido: "Malfoy",
+            casa: slytherin,
+            hechizoPreferido: cruxio
+        }
+        var bellatrix = {
+            nombre: "Bellatrix",
+            apellido: "Lestrange",
+            casa: slytherin,
+            hechizoPreferido: ak
+        }
+        var slytherin= {
+            nombre: "Slytherin",
+            emblema: "Serpiente",
+        }
+        var ak = {
+            conjuro: "Avada Kadabra",
+            efecto: "matar",
+        }
+        var cruxio = {
+            conjuro: "Cruxiooooo",
+            efecto: "Tortura",
+        }
+
+
+        var magiaSalvaje = {
+            nombre: "La Magia Salvaje",
+            especialidad: "todo",
+        }
+        var abominable = {
+            nombre: "Aquelarre de abominaciones",
+            especialidad: "abominaciones",
+        }
+        var emperador = {
+            nombre: "Aquelarre del Emperador",
+            especialidad: "todo",
+        }
+
+
+        var fan = {
+            nombre: "Fantasma",
+            forma: "gato",
+            estado: "vivo",
+        }
+        var string = {
+            nombre: "Stringbean",
+            forma: "serpiente cambiaformas",
+            estado: "vivo",
+        }
+        var flap = {
+            nombre: "Flapjack",
+            forma: "Cardenal",
+            estado: "muerto",
+        }
+        var owl = {
+            nombre: "Owlbert",
+            forma: "Buho",
+            estado: "vivo",
+        }
+
+        var amity = {
+            nombre: "Amity",
+            apellido: "Blight",
+            aquelarre: abominable,
+            palisman: fan
+        }
+
+        var luz = {
+            nombre: "Luz",
+            apellido: "Noceda",
+            aquelarre: magiaSalvaje,
+            palisman: string
+        }
+
+        var hunter = {
+            nombre: "Hunter",
+            apellido: "The Golden Guard",
+            aquelarre: emperador,
+            palisman: flap
+        }
+
+        var eda = {
+            nombre: "Edalyn",
+            apellido: "Clawthorne",
+            aquelarre: magiaSalvaje,
+            palisman: owl
+        }
+
+
+        function presentarP(bruja) {
+            console.log( bruja.nombre + " " + bruja.apellido + " pertenece a " + bruja.aquelarre.nombre + " su especialidad es "+ bruja.aquelarre.especialidad + " y su palisman es un(a) " + bruja.palisman.forma + " llamado " + bruja.palisman.nombre);
+        }
+        function presentarMago(mago) {
+            console.log(mago.nombre + " " + mago.apellido + " pertenece a la casa Slytherin con el emblema de serpiente y su hechizo favorito es  " 
+            );
+        }
+
+        presentarMago(draco);
+        console.log(cruxio.conjuro);
+        presentarMago(bellatrix);
+        console.log(ak.conjuro);
+        presentarP(amity);
+        presentarP(luz);
+        presentarP(hunter);
+        presentarP(eda);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

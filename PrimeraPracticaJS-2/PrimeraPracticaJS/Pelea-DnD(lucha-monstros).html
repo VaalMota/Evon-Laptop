@@ -30,12 +30,14 @@
         }
 
         //Aqui va JS
+        //esta incompleto pero hay que completarlo
         function mounstruoRojoAtaca() {
             console.log(mike.nombre + " Ataca");
             chicEspadas.hp = chicEspadas.hp + chicEspadas.def - mike.atk;
-            
+            mike.exp = mike.exp + chicEspadas.exp / 8;
             if (chicEspadas.hp > 0) {
-                console.log("El ataque Mike Wazaouski es de " + mike.atk + " y la defensa de " + chicEspadas.nombre+ " tiene valor de " + chicEspadas.def + " por lo tanto, " + chicEspadas.nombre + " ahora tiene " + chicEspadas.hp + " puntos de vida");
+                console.log("El ataque Mike Wazaouski es de " + mike.atk + " y la defensa de " + chicEspadas.nombre + " tiene valor de " + chicEspadas.def + " por lo tanto, " + chicEspadas.nombre + " ahora tiene " + chicEspadas.hp + " puntos de vida");
+                
             }
             if (chicEspadas.hp <= 0) {
 
@@ -48,13 +50,13 @@
         function dragonAtaca() {
             console.log(dragonA.nombre + " Ataca");
             chicEspadas.hp = chicEspadas.hp + chicEspadas.def - dragonA.atk;
-
+            dragonA.exp = dragonA.exp + chicEspadas.exp / 5;
             if (chicEspadas.hp > 0) {
                 console.log("El ataque del dragon ojiazul es de " + dragonA.atk + " y la defensa de " + chicEspadas.nombre + " tiene valor de " + chicEspadas.def + " por lo tanto, " + chicEspadas.nombre + " ahora tiene " + chicEspadas.hp + " puntos de vida");
                 
             }
             if (chicEspadas.hp <= 0) {
-                alert("La vida de la caballera bajo a 0 y se murio por andar de mensa jaja")
+                alert("La vida de la caballera bajo a 0 y se murio por andar de mensa jaja. Los puntos de experiencia se reparten asi: " + dragonA.nombre + " = +" + dragonA.exp + " Xp.Y " + mike.nombre + " = +" + mike.exp +" Xp")
             }
             contraAtaqueD()
         }

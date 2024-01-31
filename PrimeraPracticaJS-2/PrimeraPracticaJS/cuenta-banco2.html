@@ -9,13 +9,12 @@
             prop: "Raulina Castro",
             saldo: 1603,
             banco: "Banco de Mexicos",
-            nip: 123,
          }
 
         function retirarDinero() {
             
             var nipp = campoNipIngresado.value;
-            if (miCuenta.nip === nipp) {
+            if (123 == nipp) {
                 var monto = campoMonto.value;
                 if (monto > miCuenta.saldo) {
                     //el saldo es insuficiente
@@ -29,7 +28,7 @@
                         + miCuenta.saldo;
                 }
             }
-            if ( miCuenta.nip != nipp)   {
+            if ( 123 != nipp)   {
                 panelResultado.innerHTML = "Nip incorrecto";
             }
         }
@@ -37,23 +36,23 @@
 
         function consulCuenta() {
             var nipc = campoNipIngresado.value;
-            if (miCuenta.nipp === nipc) {
+            if (123 == nipc) {
                 panelResultado.innerHTML =
                     miCuenta.prop + ", " + "tienes $" +
                     miCuenta.saldo + " en el " + miCuenta.banco;
             }
-            if (miCuenta.nip!= nipc) {
+            if (123!= nipc) {
                 panelResultado.innerHTML = "Nip incorrecto";
             }
         }
         function depositarDinero() {
             var nipd = campoNipIngresado.value;
-            if (miCuenta.nip === nipd) {
+            if (123 == nipd) {
                 var monto = campoMonto.value;
                 miCuenta.saldo += monto;
                 panelResultado.innerHTML = "Depositaste $" + monto + ". Ahora tienes $" + "pesos en el" + miCuenta.banco;
             }
-            if (miCuenta.nip != nipd) {
+            if (123 != nipd) {
                 panelResultado.innerHTML = "Nip incorrecto";
             }
            
