@@ -4,31 +4,32 @@
     <meta charset="utf-8" />
     <title>Relaciones entre estructuras</title>
     <script>
-        var draco = {
-            nombre: "Draco",
-            apellido: "Malfoy",
-            casa: slytherin,
-            hechizoPreferido: cruxio
-        }
-        var bellatrix = {
-            nombre: "Bellatrix",
-            apellido: "Lestrange",
-            casa: slytherin,
-            hechizoPreferido: ak
-        }
-        var slytherin= {
+        var sly = {
             nombre: "Slytherin",
             emblema: "Serpiente",
         }
         var ak = {
-            conjuro: "Avada Kadabra",
-            efecto: "matar",
+            nombreH: "Adaba Kadabra",
+            efecto: "matar 0_0"
         }
         var cruxio = {
-            conjuro: "Cruxiooooo",
-            efecto: "Tortura",
+            nombreH: "Cruxiooooooo",
+            efecto: "Torturar"
         }
 
+
+        var draco = {
+            nombre: "Draco",
+            apellido: "Malfoy",
+            casa: sly,
+            hechizo: cruxio
+        }
+        var bellatrix = {
+            nombre: "Bellatrix",
+            apellido: "Lestrange",
+            casa: sly,
+            hechizo: ak
+        }
 
         var magiaSalvaje = {
             nombre: "La Magia Salvaje",
@@ -93,19 +94,29 @@
             palisman: owl
         }
 
+        
 
         function presentarP(bruja) {
-            console.log( bruja.nombre + " " + bruja.apellido + " pertenece a " + bruja.aquelarre.nombre + " su especialidad es "+ bruja.aquelarre.especialidad + " y su palisman es un(a) " + bruja.palisman.forma + " llamado " + bruja.palisman.nombre);
+            console.log(bruja.nombre + " "
+                + bruja.apellido + " pertenece a " + bruja.aquelarre.nombre
+                + " su especialidad es " + bruja.aquelarre.especialidad
+                + " y su palisman es un(a) " + bruja.palisman.forma
+                + " llamado " + bruja.palisman.nombre);
         }
         function presentarMago(mago) {
-            console.log(mago.nombre + " " + mago.apellido + " pertenece a la casa Slytherin con el emblema de serpiente y su hechizo favorito es  " 
-            );
+            console.log(mago.nombre + " " + mago.apellido + " pertenece a la casa "
+                + mago.casa.nombre + " con el emblema de "
+                + mago.casa.emblema + " y su hechizo favorito es  "
+                + mago.hechizo.nombreH
+                );
         }
 
+
+
+
         presentarMago(draco);
-        console.log(cruxio.conjuro);
         presentarMago(bellatrix);
-        console.log(ak.conjuro);
+        
         presentarP(amity);
         presentarP(luz);
         presentarP(hunter);
