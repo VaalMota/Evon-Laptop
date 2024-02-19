@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cuenta-banco2.html" />
+    <Content Include="diagramas-de-flujo.html" />
     <Content Include="ejercicio-estructuras2.html" />
     <Content Include="IMC-y-FaCoViceversa.html" />
     <Content Include="img\personajes\arania.png" />
