@@ -102,11 +102,20 @@
     <Content Include="img\personajes\dragonAzul.png" />
     <Content Include="img\personajes\fondo.jpg" />
     <Content Include="img\personajes\monstroRojo.png" />
+    <Content Include="img\Zodiaco\acuario.jpg" />
+    <Content Include="img\Zodiaco\capricornio.jpg" />
+    <Content Include="img\Zodiaco\escorpio.jpg" />
+    <Content Include="img\Zodiaco\indefinido.jpg" />
+    <Content Include="img\Zodiaco\leo.jpg" />
+    <Content Include="img\Zodiaco\libra.jpg" />
+    <Content Include="img\Zodiaco\tairo.jpg" />
+    <Content Include="img\Zodiaco\virgo.jpg" />
     <Content Include="Pelea-DnD%28lucha-monstros%29.html" />
     <Content Include="practica1triangulos.html" />
     <Content Include="relaciones-de-estructuras.html" />
     <Content Include="test-no-relevante-en-tareas.html" />
     <Content Include="Web.config" />
+    <Content Include="Zodiaco-ejercicio.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
