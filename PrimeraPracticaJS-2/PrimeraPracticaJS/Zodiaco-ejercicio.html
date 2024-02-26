@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <title>Ejercicio Zodiaco</title>
     <script>
+
+  
         function consulHoroscop() {
             var dia = parseInt(selectorDiaN.value);
             var mes = parseInt(selectorMesN.value);
@@ -11,101 +13,431 @@
             var valor = mes * 100 + dia;
             console.log("Consultando fecha " + dia + "/" + mes + " = " + valor);
 
-            if (119 <valor && valor<219) {
-                icono.src = "img/zodiaco/acuario.jpg";
-                nombreSigno.innerHTML = "Acuario";
-                descripSigno.innerHTML = "Regida por Saturno y Urano, eres capaz de canalizar tu espíritu especial e innovador en un trabajo productivo. También valoras tu independencia y necesitas tener cierta libertad en tu vida para hacer lo que quieras.";
+            if (320 <valor && valor <420) {
+                icono.src = "img/zodiaco/aries.jpg";
+                nombreSigno.innerHTML = "Aries";
+                descripSigno.innerHTML = "Una persona rebosante de energía y entusiasmo; avanzada y aventurera, adora la libertad, los retos y las nuevas ideas. Los Aries son de acción rápida y confían en su poder, por eso no pierden el tiempo pensando en problemas, de hecho, su manera de resolverlos es la acción.";
             }
-            else if (419 < valor && valor< 521) {
+            else if (419 < valor && valor < 521) {
                 icono.src = "img/zodiaco/tairo.jpg";
                 nombreSigno.innerHTML = "Tauro";
                 descripSigno.innerHTML = "La proyección del Sol en su nacimiento suele influir para que sean personas firmes, decididas y constantes en varios sentidos. También adoran sentir seguridad, por eso la buscan tanto, es como una necesidad constante en sus vidas. Un Tauro es un ser decidido, pragmático y tiene una enorme fuerza de voluntad.";
             }
-            else if (1022 < valor && valor< 1122) {
-                icono.src = "img/zodiaco/escorpio.jpg";
-                nombreSigno.innerHTML = "Escorpio";
-                descripSigno.innerHTML = "Los escorpio son leales, inteligentes, astutos y estoicos. Se mantienen firmes en sus creencias y no anhelan la aprobación de nadie más. Los que pertenecen a este sigo, son personas con bastante fuerza de voluntad, que saben lo que quieren y no tienen miedo de trabajar duro y jugar a largo plazo para conseguirlo."
+            else if ( 520< valor && valor < 621) {
+                icono.src = "img/zodiaco/geminis.jpg";
+                nombreSigno.innerHTML = "Geminis";
+                descripSigno.innerHTML = "Como signo de los gemelos, su carácter es doble y bastante contradictorio por complejo. Por una parte es capaz de adaptarse con facilidad y rapidez a todo, pero por otra puede resultar hipócrita. Su distintivo común es la comunicación y el ingenio.";
             }
-            else if (822<valor && valor<921) {
+            else if (620 < valor && valor < 723) {
+                icono.src = "img/zodiaco/cancer.jpg";
+                nombreSigno.innerHTML = "Cancer";
+                descripSigno.innerHTML = "Son muy emocionales y sensibles, y se preocupan profundamente por los asuntos de la familia y del hogar. El cáncer es comprensivo y se apega a las personas que mantienen cerca. Al ser un signo de agua regido por la Luna, son personas con un carácter y comportamiento un tanto discorde con cambios de ánimos rápidos.";
+            }
+            else if (722 < valor && valor < 823) {
+                icono.src = "img/zodiaco/leo.jpg";
+                nombreSigno.innerHTML = "Leo";
+                descripSigno.innerHTML = "Tienden sentir empatía por los demás y son comprensivos, además de altamente sociables. Como buen rey de la selva, son líderes por naturaleza, independientes, valientes, aventureros y fuertes, pero también muy cabezotas. Les encantan las cosas buenas, el lujo y la diversión, huyen de todo lo vulgar.";
+            }
+            else if (822 < valor && valor < 923) {
                 icono.src = "img/zodiaco/virgo.jpg";
                 nombreSigno.innerHTML = "Virgo";
                 descripSigno.innerHTML = "Regido por Mercurio, este signo del zodiaco, siempre está elaborando estrategias y planificando. Los del signo Virgo, no son de los que se sientan a procrastinar, sino que suelen buscar formas de mejorar y ser más productivos."
             }
+            else if (922 < valor && valor < 1023) {
+                icono.src = "img/zodiaco/libra.jpg";
+                nombreSigno.innerHTML = "Libra";
+                descripSigno.innerHTML = "Regido por Mercurio, este signo del zodiaco, siempre está elaborando estrategias y planificando. Los del signo Virgo, no son de los que se sientan a procrastinar, sino que suelen buscar formas de mejorar y ser más productivos."
+            }
+            else if (1022 < valor && valor < 1122) {
+                icono.src = "img/zodiaco/escorpio.jpg";
+                nombreSigno.innerHTML = "Escorpio";
+                descripSigno.innerHTML = "Los escorpio son leales, inteligentes, astutos y estoicos. Se mantienen firmes en sus creencias y no anhelan la aprobación de nadie más. Los que pertenecen a este sigo, son personas con bastante fuerza de voluntad, que saben lo que quieren y no tienen miedo de trabajar duro y jugar a largo plazo para conseguirlo."
+            }
+            else if (1121 < valor && valor < 1222) {
+                icono.src = "img/zodiaco/sagitario.jpg";
+                nombreSigno.innerHTML = "Sagitario";
+                descripSigno.innerHTML = "Los Sagitario tienden a decir exactamente lo que piensan, y tienen fuertes creencias que les apasionan. A este signo del zodiaco le gusta compartir su conocimiento e ideas con la gente y sentirse valorado por eso. Sin embargo, deben tener cuidado de no imponer sus opiniones a los demás.";
+            }
+            else if (1221 < valor && valor < 2132 || 100 < valor && valor < 120) {
+                icono.src = "img/zodiaco/capricornio.jpg";
+                nombreSigno.innerHTML = "Capricornio";
+                descripSigno.innerHTML = "Capricornio es un signo cardinal y de tierra, y uno de los signos del zodíaco más constante, sólido y apacible. También se caracteriza por ser prudente y práctico en todos los asuntos que le conciernen. Sus aspectos más negativos tienden hacia el pesimismo, la fijeza y la melancolía.";
+            }
+            else if (119 < valor && valor < 219) {
+                icono.src = "img/zodiaco/acuario.jpg";
+                nombreSigno.innerHTML = "Acuario";
+                descripSigno.innerHTML = "Regida por Saturno y Urano, eres capaz de canalizar tu espíritu especial e innovador en un trabajo productivo. También valoras tu independencia y necesitas tener cierta libertad en tu vida para hacer lo que quieras.";
+            }
+            else if (218 < valor && valor < 321) {
+                icono.src = "img/zodiaco/piscis.jpg";
+                nombreSigno.innerHTML = "Piscis";
+                descripSigno.innerHTML = "Son soñadores y creativos, poseedores de una imaginación rica y una intuición poderosa. Este signo tiende a absorber las emociones de quienes los rodean, lo que los hace altamente perceptivos y comprensivos. Son seres amables y altruistas que sienten un fuerte llamado a ayudar a los demás y a aliviar el sufrimiento.";
+            }
         }
+
+
+
+        function consulCompatibilidad() {
+            var signo1 = parseInt(primerZ.value);
+            var signo2 = parseInt(segundoZ.value);
+
+            var resultado = signo1 * 100 + signo2;
+            console.log(signo1 + "  " + signo2 + " = " + resultado);
+
+
+            //Aries
+            if (resultado == 101 || resultado == 102 || resultado == 105 || resultado == 111) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 103 || resultado == 106 || resultado == 108 || resultado == 109) {
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                compSN.innerHTML = "Podrian Intentarlo";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 104 || resultado == 107 || resultado == 110 || resultado == 112) {
+                icono2.src = "img/Zodiaco/no.jpg";
+                compSN.innerHTML = "No";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //Tauro
+            else if (resultado == 201 || resultado == 202 || resultado == 204 || resultado == 206 || resultado == 210 || resultado == 212) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 203 || resultado == 207 || resultado == 208 || resultado == 209) {
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                compSN.innerHTML = "Podrian Intentarlo";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+
+            }
+            else if (resultado == 205 || resultado == 211) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            // Geminis
+            else if (resultado == 307 || resultado == 311) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 301 || resultado == 302 || resultado == 303 || resultado == 304 || resultado == 308 || resultado == 309) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+                
+            }
+            else if (resultado == 305 || resultado == 306 || resultado == 310 || resultado == 312) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //Cancer
+            else if (resultado == 402 || resultado == 404 || resultado == 406 || resultado == 408 || resultado == 412) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 403 || resultado == 405 || resultado == 410) {
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                compSN.innerHTML = "Podrian Intentarlo";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 401 || resultado == 407 || resultado == 409 || resultado == 411) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //Leo
+            else if (resultado == 501 || resultado == 507 || resultado == 509 || resultado == 511) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 504 || resultado == 505 || resultado == 506 || resultado == 510 || resultado == 512) {
+                compSN.innerHTML = "Podrian intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 502 || resultado == 503 || resultado == 508) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //Virgo
+            else if (resultado == 602 || resultado == 604 || resultado == 606 || resultado == 610) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 601 || resultado == 605 || resultado == 608 || resultado == 609 || resultado == 611 || resultado == 612) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 603 || resultado == 607) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //Libra
+            else if (resultado == 703 || resultado == 705 || resultado == 707 || resultado == 709) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 702 || resultado == 708 || resultado == 711 || resultado == 712) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 701 || resultado == 704 || resultado == 706 || resultado == 710) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //Escorpio
+            else if (resultado == 804 || resultado == 808 || resultado == 810 || resultado == 812) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 801 || resultado == 802 || resultado == 803 || resultado == 806 || resultado == 807) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 805 || resultado == 809 || resultado == 811) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //Sagitario
+            else if (resultado == 905 || resultado == 907 || resultado == 909 || resultado == 911) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 901 || resultado == 902 || resultado == 903 || resultado == 906 || resultado == 910 || resultado == 912) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 904 || resultado == 908) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //capricornio
+            else if (resultado == 1002 || resultado == 1006 || resultado == 1008 || resultado == 1010) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 1004 || resultado == 1005 || resultado == 1009 || resultado == 1011 || resultado == 1012) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 1001 || resultado == 1003 || resultado == 1007) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //acuario
+            else if (resultado == 1101 || resultado == 1103 || resultado == 1105 || resultado == 1109 || resultado == 1111) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 1106 || resultado == 1107 || resultado == 1110) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 1102 || resultado == 1104 || resultado == 1108 || resultado == 1112) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            //piscis
+            else if (resultado == 1202 || resultado == 1204 || resultado == 1208 || resultado == 1212) {
+                icono2.src = "img/Zodiaco/fondo-d-corazon.png";
+                compSN.innerHTML = "Si";
+                descripComp.innerHTML = "Compatibilidad muy alta, tienen muchas cosas en comun y forman una pareja muy linda, seguramente les va a ir muy bien en la relación.";
+            }
+            else if (resultado == 1205 || resultado == 1206 || resultado == 1207 || resultado == 1209 || resultado == 1210) {
+                compSN.innerHTML = "Podrian Intentarlo";
+                icono2.src = "img/Zodiaco/masomenos.jpg";
+                descripComp.innerHTML = "Medianamente compatibles, con algo de suerte y esfuerzo de los 2 las cosas podrian funcionar";
+            }
+            else if (resultado == 1201 || resultado == 1203 || resultado == 1211) {
+                compSN.innerHTML = "No";
+                icono2.src = "img/Zodiaco/no.jpg";
+                descripComp.innerHTML = "Es mejor no intentarlo, los astros indican que esta relacion terminara de una mala manera.";
+            }
+            else console.log("ke");
+        }
+
     </script>
+    <style>
+        .selector {
+            color: ghostwhite;
+            font-family: Candara;
+            
+        }
+        .img {
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+        .punto{
+            color:black
+        }
+        body {
+            background-image : url("img/Zodiaco/fondo astrologias.jpg");
+            
+        }
+        h1 {
+            text-align: center;
+            color: ghostwhite; 
+            font-family: 'Copperplate Gothic'
+        }
+        h2 {
+            color: ghostwhite;
+            font-size: xx-large;
+            text-align: center;
+        }
+        p {
+            color: ghostwhite;
+            font-family: Candara;
+            font-size: large;
+            margin-left: 200px;
+            margin-right: 110px;
+        }
+
+    </style>
 </head>
 <body>
     <h1>El Horoscopo</h1>
-    <p>
-        Se toman en cuenta estas fechas para obtener el signo:
-        Aries:  21 de marzo al 19 de abril
-        Tauro:  20 de abril al 20 de mayo
-        Géminis:  21 de mayo al 20 de junio
-        Cáncer:  21 de junio al 22 de julio
-        Leo:  23 de julio al 22 de agosto
-        Virgo:  23 de agosto al 22 de septiembre
-        Libra:  23 de septiembre al 22 de octubre
-        Escorpio:  23 de octubre al 21 de noviembre
-        Sagitario:  22 de noviembre al 21 de diciembre
-        Capricornio:  22 de diciembre al 19 de enero
-        Acuario:  20 de enero al 18 de febrero
-        Piscis:  19 de febrero al 20 de marzo
-    </p>
-    <label>Dia de Nacimiento</label>
-    <select id="selectorDiaN">
-        <option value="1"> 1</option>
-        <option value="2"> 2</option>
-        <option value="3"> 3</option>
-        <option value="4"> 4</option>
-        <option value="5"> 5</option>
-        <option value="6"> 6</option>
-        <option value="7"> 7</option>
-        <option value="8"> 8</option>
-        <option value="9"> 9</option>
-        <option value="10"> 10</option>
-        <option value="11"> 11</option>
-        <option value="12"> 12</option>
-        <option value="13"> 13</option>
-        <option value="14"> 14</option>
-        <option value="15"> 15</option>
-        <option value="16"> 16</option>
-        <option value="17"> 17</option>
-        <option value="18"> 18</option>
-        <option value="19"> 19</option>
-        <option value="20"> 20</option>
-        <option value="21"> 21</option>
-        <option value="22"> 22</option>
-        <option value="23"> 23</option>
-        <option value="24"> 24</option>
-        <option value="25"> 25</option>
-        <option value="26"> 26</option>
-        <option value="27"> 27</option>
-        <option value="28"> 28</option>
-        <option value="29"> 29</option>
-        <option value="30"> 30</option>
-        <option value="31"> 31</option>
+    <p> Se toman en cuenta estas fechas para obtener el signo: </p>
+    <p>-Aries:  21 de marzo al 19 de abril.   -Tauro:  20 de abril al 20 de mayo</p>
+    <p>-Géminis:  21 de mayo al 20 de junio. -Cáncer:  21 de junio al 22 de julio</p>
+    <p>-Leo:  23 de julio al 22 de agosto. -Virgo:  23 de agosto al 22 de septiembre</p>
+    <p>-Libra:  23 de septiembre al 22 de octubre. -Escorpio:  23 de octubre al 21 de noviembre</p>
+    <p>-Sagitario:  22 de noviembre al 21 de diciembre. -Capricornio:  22 de diciembre al 19 de enero</p>
+    <p>-Acuario:  20 de enero al 18 de febrero. -Piscis:  19 de febrero al 20 de marzo</p>
 
-    </select>
-    <label>Mes de Nacimiento</label>
-    <select id="selectorMesN">
-        <option value="1"> Enero</option>
-        <option value="2"> Febrero</option>
-        <option value="3"> Marzo</option>
-        <option value="4"> Abril</option>
-        <option value="5"> Mayo</option>
-        <option value="6"> Junio</option>
-        <option value="7"> Julio</option>
-        <option value="8"> Agosto</option>
-        <option value="9"> Septiembre</option>
-        <option value="10"> Octubre</option>
-        <option value="11"> Noviembre</option>
-        <option value="12">Diciembre</option>
-    </select>
-    <button onclick="consulHoroscop()">
-    Consultar horóscopo
-    </button>
-    <img id="icono" src="img/Zodiaco/indefinido.jpg"/>
+        <label class="selector">Dia de Nacimiento</label>
+        <select id="selectorDiaN">
+            <option value="1"> 1</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5</option>
+            <option value="6"> 6</option>
+            <option value="7"> 7</option>
+            <option value="8"> 8</option>
+            <option value="9"> 9</option>
+            <option value="10"> 10</option>
+            <option value="11"> 11</option>
+            <option value="12"> 12</option>
+            <option value="13"> 13</option>
+            <option value="14"> 14</option>
+            <option value="15"> 15</option>
+            <option value="16"> 16</option>
+            <option value="17"> 17</option>
+            <option value="18"> 18</option>
+            <option value="19"> 19</option>
+            <option value="20"> 20</option>
+            <option value="21"> 21</option>
+            <option value="22"> 22</option>
+            <option value="23"> 23</option>
+            <option value="24"> 24</option>
+            <option value="25"> 25</option>
+            <option value="26"> 26</option>
+            <option value="27"> 27</option>
+            <option value="28"> 28</option>
+            <option value="29"> 29</option>
+            <option value="30"> 30</option>
+            <option value="31"> 31</option>
+
+        </select>
+        <label class="selector">Mes de Nacimiento</label>
+        <select id="selectorMesN">
+            <option value="1"> Enero</option>
+            <option value="2"> Febrero</option>
+            <option value="3"> Marzo</option>
+            <option value="4"> Abril</option>
+            <option value="5"> Mayo</option>
+            <option value="6"> Junio</option>
+            <option value="7"> Julio</option>
+            <option value="8"> Agosto</option>
+            <option value="9"> Septiembre</option>
+            <option value="10"> Octubre</option>
+            <option value="11"> Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+        <button onclick="consulHoroscop()">
+            Consultar Horóscopo
+        </button>
+<p class="punto">.</p>
+    <img id="icono" class="img" src="img/Zodiaco/indefinido.jpg" />
     <h2 id="nombreSigno"> </h2>
     <p id="descripSigno"> </p>
+    <p class="punto">.</p>
+    <p class="punto">.</p>
+    <p class="punto">.</p>
+    <p class="punto">.</p>
+
+
+
+
+    <h1>Compatibilidad de signos zodiacales</h1>
+
+    <p>Ingresa los signos los cuales quieras averiguar si son compatibles, medianamente compatibles o nada compatibles</p>
+
+    <label class="selector">Primer Zigno Zodiacal: </label>
+    <select id="primerZ">
+        <option value="1">Aries</option>
+        <option value="2">Tauro</option>
+        <option value="3">Géminis</option>
+        <option value="4">Cáncer</option>
+        <option value="5">Leo</option>
+        <option value="6">Virgo</option>
+        <option value="7">Libra</option>
+        <option value="8">Escorpio</option>
+        <option value="9">Sagitario</option>
+        <option value="10">Capricornio</option>
+        <option value="11">Acuario</option>
+        <option value="12">Piscis</option>
+    </select>
+
+    <label class="selector">Segundo Signo Zodiacal: </label>
+    <select id="segundoZ">
+        <option value="1">Aries</option>
+        <option value="2">Tauro</option>
+        <option value="3">Géminis</option>
+        <option value="4">Cáncer</option>
+        <option value="5">Leo</option>
+        <option value="6">Virgo</option>
+        <option value="7">Libra</option>
+        <option value="8">Escorpio</option>
+        <option value="9">Sagitario</option>
+        <option value="10">Capricornio</option>
+        <option value="11">Acuario</option>
+        <option value="12">Piscis</option>
+    </select>
+    <button onclick="consulCompatibilidad()">
+        Consultar Compatibilidad
+    </button>
+    <p class="punto">.</p>
+
+    <h2 id="compSN"> </h2>
+    <p id="descripComp"> </p>
+    <img id="icono2" class="img" src="img/Zodiaco/indefinido.jpg" />
 </body>
 </html>
