@@ -94,6 +94,8 @@
   <ItemGroup>
     <Content Include="cuenta-banco2.html" />
     <Content Include="diagramas-de-flujo.html" />
+    <Content Include="ejercicio- tablas-multipl-y-IMC.html" />
+    <Content Include="ejercicio-d-ciclo-for.html" />
     <Content Include="ejercicio-estructuras2.html" />
     <Content Include="IMC-y-FaCoViceversa.html" />
     <Content Include="img\personajes\arania.png" />

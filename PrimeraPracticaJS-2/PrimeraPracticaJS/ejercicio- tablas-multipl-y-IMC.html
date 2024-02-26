@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tablas de Multiplicar y el Indice de Masa Corporal</title>
+    <script>
+        console.log("Tablas de Multiplicar");
+        for (var t = 0; t <= 10; t++) {
+            console.log("Tabla del " + t)
+            for (var n = 1; n <= 10; n++) {
+                var res = t * n;
+                console.log(t + "x" + n + "=" + res);
+            }
+            
+        }
+
+        console.log("Indice de Masa corporal")
+        for (var peso = 10; peso<= 200; peso++ ) {
+            var altura = 2;
+            var IMC = peso / (altura * altura);
+            console.log("Una persona con 2 metros de altura y " + peso + " kilos, tiene un IMC de: " +IMC)
+            if (18.5 <= IMC && IMC <= 24.9) {
+                console.log("Tienes in IMC normal :3")
+            }
+            else if (IMC < 18.5) {
+                console.log("Tienes in IMC anormal y por ende tienes infrapeso :O")
+            }
+            else if (25<IMC&&IMC <30) {
+                console.log("Tienes in IMC anormal y por ende estas alto de peso D:")
+            }
+            else if (IMC > 30) {
+                console.log("Tienes in IMC anormal y te vas a morir por sobrepeso XD")
+            }
+        }
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>
