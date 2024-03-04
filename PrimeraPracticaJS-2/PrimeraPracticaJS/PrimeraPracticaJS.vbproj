@@ -92,6 +92,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="arreglos-y-mapeo.html" />
     <Content Include="cuadors-c-circulos.html" />
     <Content Include="cuenta-banco2.html" />
     <Content Include="diagramas-de-flujo.html" />

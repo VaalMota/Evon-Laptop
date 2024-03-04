@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Arreglos/listas y sus cositas :D</title>
+    <script>
+
+        function calcularCal() {
+            return 1;
+        }
+        //Declaramos un Arreglo
+        var calificaciones = [8, 7, 10, 9, 5, 9, 7, 6];
+        console.log("Longitud de la lista de calificaciones: " + calificaciones.length);
+
+        //Formas de acceder/leer los elementos
+        console.log("El primer elemento es: " + calificaciones[0])
+
+        var ultimaCal = calificaciones[calificaciones.length - 1];
+        console.log("El ultimo es: " + ultimaCal);
+
+        //Formas de modoficar los elementos
+        calificaciones[4] = 10;
+        calificaciones[2] = 3 + 5;
+        calificaciones[1] = calificaciones[3];
+
+        var miCal = 7;
+        calificaciones[4] = miCal;
+
+        calificaciones[2] = calcularCal();
+
+        //Muestra en la consola el contenido de la lista
+        console.log(calificaciones);
+
+        //Recorrer un errreglo usando un ciclo for
+        for(var i = 0; i < calificaciones.length; i++) {
+            console.log("Pos " + i + " contiene " + calificaciones[i]);
+        }
+
+        function calcularPromedio(arreglo) {
+            var suma = 0;
+            for (var i = 0; i < arreglo.length; i++) {
+                suma += arreglo[i];
+            }
+            var prom = suma / arreglo.length;
+
+            return prom;
+        }
+
+        var promCal = calcularPromedio(calificaciones);
+        console.log("El promedio de calificaciones es: " + promCal);
+
+        var alturas = [1.7, 1.9, 1.69, 0.96];
+        console.log(alturas);
+        var promAlturas = calcularPromedio(alturas);
+        
+        console.log("El promedio de las alturas es: " + promAlturas)
+
+        console.log("El promedio de costos es: " + calcularPromedio([19.99, 10.50, 34.0]));
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
