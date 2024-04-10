@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="arreglos-y-mapeo.html" />
+    <Content Include="chat-sistema.html" />
     <Content Include="cuadors-c-circulos.html" />
     <Content Include="cuenta-banco2.html" />
     <Content Include="diagramas-de-flujo.html" />
@@ -101,12 +102,16 @@
     <Content Include="ejercicio-estructuras2.html" />
     <Content Include="examen 2.html" />
     <Content Include="IMC-y-FaCoViceversa.html" />
+    <Content Include="img\chat\banzai.jpg" />
+    <Content Include="img\chat\Ed.jpg" />
     <Content Include="img\personajes\arania.png" />
     <Content Include="img\personajes\chicaEspadas.png" />
     <Content Include="img\personajes\chicaLanza.png" />
     <Content Include="img\personajes\dragonAzul.png" />
     <Content Include="img\personajes\fondo.jpg" />
     <Content Include="img\personajes\monstroRojo.png" />
+    <Content Include="img\chat\Scar.jpg" />
+    <Content Include="img\chat\Shenzi.jpg" />
     <Content Include="img\Zodiaco\acuario.jpg" />
     <Content Include="img\Zodiaco\cancer.jpg" />
     <Content Include="img\Zodiaco\capricornio.jpg" />

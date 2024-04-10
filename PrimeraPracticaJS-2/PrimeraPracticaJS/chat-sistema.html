@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sistema de Chat</title>
+    <script>
+        var dialogo = [
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Chispas, ese Mufasa, no me podré sentar en una semana",
+                imagen: <img src="img/chat/banzai.jpg" />
+            },
+            {
+                nombre: "Ed",
+                color: "#124124",
+                texto: "(Ríe a carcajadas)"
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Ah, ya cállate (golpea a Ed y este cae lentamente)",
+                imagen: <img src="img/chat/banzai.jpg" />
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: " ¡Qué barbaridad! Con razón estamos al final de la cadena alimenticia"
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Me chocan las cadenas",
+                imagen: <img src="img/chat/banzai.jpg" />
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: "De no ser por esos apestosos leones seríamos dueños del rancho"
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Bah! Me chocan los leones",
+                imagen: <img src="img/chat/banzai.jpg" />
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: "Son molestos..."
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Y peludos...",
+                imagen: <img src="img/chat/banzai.jpg" />
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: "Y gruñones..."
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Y además son tan...",
+                imagen: <img src="img/chat/banzai.jpg" />
+            },
+            {
+                nombre: "Banzai y Shenzi",
+                color: "#124124",
+                texto: "Feos (los dos se matan de la risa, cuando son interrumpidas por Scar)"
+            },
+            {
+                nombre: "Scar",
+                color: "#124124",
+                texto: "Yo no creo que los leones seamos tan terribles",
+                imagen: <img src="img/chat/Scar.jpg" />
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: "Scar... eres tú, creímos que era alguien importante..."
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Alguien como Mufasa..."
+            },
+            {
+                nombre: "Scar",
+                color: "#124124",
+                texto: "Ah sí",
+                imagen: <img src="img/chat/Scar.jpg" />
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Ese sí es poder"
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Mufasa (la Hiena tirita)"
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: " Ahhh!!! …otra vez"
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Mufasa (tirita) Mufasa, Mufasa..."
+            },
+            {
+                nombre: "Scar",
+                color: "#124124",
+                texto: " Ah! Estoy Rodeado de tontos",
+                imagen: <img src="img/chat/Scar.jpg" />
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: " Scar tú eres de los nuestros, eres nuestro amigo"
+            },
+            {
+                nombre: "Scar",
+                color: "#124124",
+                texto: "Claro",
+                imagen: <img src="img/chat/Scar.jpg" />
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: "Eso me gusta, no es rey pero es tan bien educado..."
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "Oye, nos trajiste algo de comer Scar, hermano, amigo, viejito, compadre,cuate..."
+            },
+            {
+                nombre: "Scar",
+                color: "#124124",
+                texto: "No creo que merezcan... esto. Les envolví como regalo a esos dos cachorros y no pudieron eliminarlos...",
+                imagen: <img src="img/chat/Scar.jpg" />
+            },
+            {
+                nombre: "Shenzi",
+                color: "#124124",
+                texto: "Bueno, es que no vinieron solos Scar..."
+            },
+            {
+                nombre: "Banzai",
+                color: "#124124",
+                texto: "¿Qué íbamos a hacer? ¿Matar a Mufasa?"
+            },
+            {
+                nombre: "Scar",
+                color: "#124124",
+                texto: "Precisamente...",
+                imagen: <img src="img/chat/Scar.jpg" />
+            },
+
+
+
+        ];
+
+        var indiceDialogo = 0;
+        
+        function leerSig() {
+            if (indiceDialogo < dialogo.length) {
+                var entrada = dialogo[indiceDialogo];
+                console.log(entrada.nombre + " : " + entrada.texto);
+
+                indiceDialogo++;
+            }
+            else {
+                alert("Bueno fin");
+            }
+
+            var nuevoDiv = document.createElement("Div");
+            nuevoDiv.className = "itemDialogo";
+            nuevoDiv.style.backgroundcolor = entrada.color;
+
+            var etiquetaPersonaje = document.createElement("Etiqueta");
+            var parrafoTexto = document.createElement("Parrafo");
+            //contenido (propiedad innerHTML)
+            etiquetaPersonaje.innerHTML = entrada.nombre;
+            parrafoTexto.innerHTML = entrada.texto;
+
+            //funcipon openchild al div item
+            nuevoDiv.appendChild(etiquetaPersonaje);
+            nuevoDiv.appendChild(parrafoTexto);
+
+            //y el DIV item dialogo apendizaràs al div contenedor
+            contenedorDialogo.appendChild(nuevoDiv);
+        }
+
+        
+
+
+    </script>
+    <style>
+        body{
+            background-color:#c58a3e
+
+        }
+        #contenedorDialogo {
+            border: 1px solid #000000;
+            background-color: #1b4f4c;
+            position:absolute;
+            max-width:300px;
+            margin:0 auto;
+        }
+        .itemDialogo{
+            border:1px solid #000000;
+            margin:5px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <button id="Continuar" onclick="leerSig()">CONTINUAR</button>
+    <div id="contenedorDialogo"></div>
+    
+
+</body>
+</html>
